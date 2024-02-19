@@ -2,11 +2,7 @@
 
 ## Overview
 
-Welcome to the Language Model Marketplace, a project developed for Atlan's frontend task screening round. This marketplace is designed to provide a dynamic and visually appealing interface for users interested in language models. The project is built using ReactJS as the primary JavaScript framework, with Chakra UI ensuring a consistent and aesthetically pleasing user experience.
-
-"In response to Atlan's frontend task screening round, I developed a Language Model Marketplace using ReactJS and Chakra UI for a dynamic and visually cohesive user interface. The marketplace integrates various React libraries, including react-router-dom for seamless navigation, react-icons for enhanced visual elements, react-markdown for rich text rendering, momentJS for efficient date and time handling, and Recharts for interactive charting. Notably, the project features integration with the Hugging Face API, providing valuable functionalities related to language models. The application has been successfully deployed on Vercel for seamless accessibility, and the codebase is available on GitHub, fostering collaboration and version tracking."
-
-
+Welcome to the Language Model Marketplace, a project developed for Atlan's frontend task screening round. This marketplace is designed to provide a dynamic and visually appealing interface for users interested in language models. The project is built using ReactJS as the primary JavaScript framework, with Chakra UI ensuring a consistent and aesthetically pleasing user experience and integrated real-time with Hugging Face API, providing valuable functionalities related to language models. 
 
 ## Technology Stack
 
