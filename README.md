@@ -21,6 +21,17 @@ The project follows a modular and organized structure to facilitate easy develop
 - `src/components`: Reusable React components
 - `src/components/[component_name]` - Name of the component 
 
+## Performance
+
+### Lighthouse report
+**Received scores:**
+-  ✅ Performance: 99/100 
+-  ✅ SEO: 91/100
+-  ✅ Best Practices: 100/100
+-  ✅ Accessibility: 84/100 
+
+<img width="556" alt="Screenshot 2024-02-19 at 1 47 31 PM" src="https://github.com/SiddheshKukade/llm-explorer-atlan-siddheshkukade/assets/65951872/d7f44baa-e16f-49de-85d7-db30004b8143">
+
 ## Installation
 
 To run the project locally, follow these steps:
