@@ -61,7 +61,7 @@ const FeaturedModalCard = ({ modal, gradientNo }) => {
                     <Flex gap={2} direction={"column"}>
 
                         <Text>
-                            <Tag size={'sm'} variant='subtle' color='#3E2BC7' backgroundColor={"#D1D8FF"} display={"flex"} direction={"row"}>
+                            <Tag size={'sm'} variant='subtle' color='#3E2BC7' backgroundColor={"#D1D8FF"} >
                                 <TagLabel px={1}>  🔥  Reached {convertToK(modal?.downloads)} downloads in {moment().diff(moment(modal.lastModified), 'days')} days</TagLabel>
                             </Tag>
 
