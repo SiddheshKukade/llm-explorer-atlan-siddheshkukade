@@ -23,9 +23,7 @@ Welcome to the Language Model Marketplace, a project developed for Atlan's front
 
 The project follows a modular and organized structure to facilitate easy development and maintenance. Key directories include:
 - `src/components`: Reusable React components
-- `src/pages`: Individual pages or views
-- `src/styles`: Stylesheets and theme configurations
-- `public`: Static assets and HTML template
+- `src/components/[component_name]` - Name of the component 
 
 ## Installation
 
@@ -40,18 +38,7 @@ To run the project locally, follow these steps:
 The project is deployed on Vercel, ensuring seamless accessibility. Visit the live demo [https://llm-explorer-atlan-siddheshkukade.vercel.app/](https://llm-explorer-atlan-siddheshkukade.vercel.app).
 
 ## Usage
-
-Provide instructions or examples on how users can navigate the marketplace, interact with language models, and explore various features.
-
  
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-- Mention any specific credits or acknowledgments for third-party libraries, resources, or inspirations.
-
 ## Contact
 
 For any inquiries or feedback, feel free to reach out to [siddheshkukade2003@gmail.com].
