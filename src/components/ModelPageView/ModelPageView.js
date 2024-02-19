@@ -180,7 +180,7 @@ const ModelPageView = () => {
                                     <Flex direction={"column"} w={"60%"}>
                                         <Flex mt={5} h={"5%"} justifyContent={"flex-start"} gap={10} pr={10}>
                                             {modelData?.safetensors?.total?.toLocaleString()?.length > 0 ? (<Flex direction={"column"} >
-                                                <Text fontWeight={700} fontSize={"2rem"} color={"gray"}>
+                                                <Text fontWeight={700} fontSize={"1.5rem"} color={"gray"}>
                                                     {modelData?.safetensors?.total?.toLocaleString()}
                                                 </Text>
                                                 <Text fontWeight={400} fontSize={"1.2rem"} color={"gray"}>
@@ -188,7 +188,7 @@ const ModelPageView = () => {
                                                 </Text>
                                             </Flex>) : ""}
                                             {getFirstTypeName(modelData?.safetensors?.parameters)?.toLocaleUpperCase().length > 0 ? (<Flex direction={"column"} >
-                                                <Text fontWeight={700} fontSize={"2rem"} color={"gray"}>
+                                                <Text fontWeight={700} fontSize={"1.5rem"} color={"gray"}>
                                                     {getFirstTypeName(modelData?.safetensors?.parameters)?.toLocaleUpperCase()}
                                                 </Text>
                                                 <Text fontWeight={400} fontSize={"1.2rem"} color={"gray"}>
@@ -197,7 +197,7 @@ const ModelPageView = () => {
                                             </Flex>) : ""}
 
                                             <Flex direction={"column"} >
-                                                <Text fontWeight={700} fontSize={"2rem"} color={"gray"}>
+                                                <Text fontWeight={700} fontSize={"1.5rem"} color={"gray"}>
                                                     {modelData?.downloads?.toLocaleString()}
                                                 </Text>
                                                 <Text fontWeight={400} fontSize={"1.2rem"} color={"gray"}>
@@ -229,7 +229,7 @@ const ModelPageView = () => {
 
                                         <Flex direction={"row"} alignItems={"center"} gap={5}>
                                             <Flex direction={"column"} >
-                                                <Text fontWeight={700} fontSize={"2rem"} color={"gray"}>
+                                                <Text fontWeight={700} fontSize={"1.5rem"} color={"gray"}>
                                                     Datasets
                                                 </Text>
                                                 <Text fontWeight={400} fontSize={"1.2rem"} color={"gray"}  >
@@ -240,13 +240,13 @@ const ModelPageView = () => {
                                                 {modelData?.cardData?.datasets?.length > 0 ?
                                                     (<>   <Flex maxH={"10%"} gap={4} px={4} py={2}>
                                                         {modelData?.cardData?.datasets[0] &&
-                                                            (<Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='gray'>
+                                                            (<Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='gray'>
                                                                 <TagLeftIcon boxSize='12px' as={LuLayers} />
                                                                 <TagLabel>{modelData?.cardData?.datasets[0]} </TagLabel>
                                                             </Tag>)}
                                                         {modelData?.cardData?.datasets[1] &&
                                                             (
-                                                                <Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='gray'>
+                                                                <Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='gray'>
                                                                     <TagLeftIcon boxSize='12px' as={CiImageOn} />
                                                                     <TagLabel>{modelData?.cardData?.datasets[1]}</TagLabel>
                                                                 </Tag>)}
@@ -254,13 +254,13 @@ const ModelPageView = () => {
                                                         <Flex gap={4} px={4} py={2}>
                                                             {modelData?.cardData?.datasets[2] &&
                                                                 (
-                                                                    <Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='gray'>
+                                                                    <Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='gray'>
                                                                         <TagLeftIcon boxSize='12px' as={CiImageOn} />
                                                                         <TagLabel>{modelData?.cardData?.datasets[2]}</TagLabel>
                                                                     </Tag>)}
                                                             {modelData?.cardData?.datasets[3] &&
                                                                 (
-                                                                    <Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='gray'>
+                                                                    <Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='gray'>
                                                                         <TagLeftIcon boxSize='12px' as={CiImageOn} />
                                                                         <TagLabel>{modelData?.cardData?.datasets[3]}</TagLabel>
                                                                     </Tag>)}
@@ -276,7 +276,7 @@ const ModelPageView = () => {
 
                                         <Flex direction={"row"} alignItems={"center"} gap={5}>
                                             <Flex direction={"column"} >
-                                                <Text fontWeight={700} fontSize={"2rem"} color={"gray"}>
+                                                <Text fontWeight={700} fontSize={"1.5rem"} color={"gray"}>
                                                     Spaces
                                                 </Text>
                                                 <Text fontWeight={400} fontSize={"1.2rem"} color={"gray"}>
@@ -288,13 +288,13 @@ const ModelPageView = () => {
                                                 {modelData?.spaces?.length > 0 ?
                                                     (<>   <Flex maxH={"10%"} gap={4} px={4} py={2}>
                                                         {modelData?.spaces[0] &&
-                                                            (<Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='yellow'>
+                                                            (<Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='yellow'>
                                                                 <TagLeftIcon boxSize='12px' as={LuLayers} />
                                                                 <TagLabel>{modelData?.spaces[0]} </TagLabel>
                                                             </Tag>)}
                                                         {modelData?.spaces[1] &&
                                                             (
-                                                                <Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='yellow'>
+                                                                <Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='yellow'>
                                                                     <TagLeftIcon boxSize='12px' as={CiImageOn} />
                                                                     <TagLabel>{modelData?.spaces[1]}</TagLabel>
                                                                 </Tag>)}
@@ -302,13 +302,13 @@ const ModelPageView = () => {
                                                         <Flex gap={4} px={4} py={2}>
                                                             {modelData?.spaces[2] &&
                                                                 (
-                                                                    <Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='yellow'>
+                                                                    <Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='yellow'>
                                                                         <TagLeftIcon boxSize='12px' as={CiImageOn} />
                                                                         <TagLabel>{modelData?.spaces[2]}</TagLabel>
                                                                     </Tag>)}
                                                             {modelData?.spaces[3] &&
                                                                 (
-                                                                    <Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='yellow'>
+                                                                    <Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='yellow'>
                                                                         <TagLeftIcon boxSize='12px' as={CiImageOn} />
                                                                         <TagLabel>{modelData?.spaces[3]}</TagLabel>
                                                                     </Tag>)}
@@ -316,13 +316,13 @@ const ModelPageView = () => {
                                                         <Flex gap={4} px={4} py={2}>
                                                             {modelData?.spaces[4] &&
                                                                 (
-                                                                    <Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='yellow'>
+                                                                    <Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='yellow'>
                                                                         <TagLeftIcon boxSize='12px' as={CiImageOn} />
                                                                         <TagLabel>{modelData?.spaces[4]}</TagLabel>
                                                                     </Tag>)}
                                                             {modelData?.spaces[5] &&
                                                                 (
-                                                                    <Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='yellow'>
+                                                                    <Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='yellow'>
                                                                         <TagLeftIcon boxSize='12px' as={CiImageOn} />
                                                                         <TagLabel>{modelData?.spaces[5]}</TagLabel>
                                                                     </Tag>)}
@@ -330,13 +330,13 @@ const ModelPageView = () => {
                                                         <Flex gap={4} px={4} py={2}>
                                                             {modelData?.spaces[6] &&
                                                                 (
-                                                                    <Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='yellow'>
+                                                                    <Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='yellow'>
                                                                         <TagLeftIcon boxSize='12px' as={CiImageOn} />
                                                                         <TagLabel>{modelData?.spaces[6]}</TagLabel>
                                                                     </Tag>)}
                                                             {modelData?.spaces[7] &&
                                                                 (
-                                                                    <Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='yellow'>
+                                                                    <Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='yellow'>
                                                                         <TagLeftIcon boxSize='12px' as={CiImageOn} />
                                                                         <TagLabel>{modelData?.spaces[7]}</TagLabel>
                                                                     </Tag>)}
@@ -344,13 +344,13 @@ const ModelPageView = () => {
                                                         <Flex gap={4} px={4} py={2}>
                                                             {modelData?.spaces[8] &&
                                                                 (
-                                                                    <Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='yellow'>
+                                                                    <Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='yellow'>
                                                                         <TagLeftIcon boxSize='12px' as={CiImageOn} />
                                                                         <TagLabel>{modelData?.spaces[8]}</TagLabel>
                                                                     </Tag>)}
                                                             {modelData?.spaces[9] &&
                                                                 (
-                                                                    <Tag cursor={"pointer"} size={'lg'} key={'1'} variant='outline' colorScheme='yellow'>
+                                                                    <Tag cursor={"pointer"} size={'sm'} key={'1'} variant='outline' colorScheme='yellow'>
                                                                         <TagLeftIcon boxSize='12px' as={CiImageOn} />
                                                                         <TagLabel>{modelData?.spaces[9]}</TagLabel>
                                                                     </Tag>)}
