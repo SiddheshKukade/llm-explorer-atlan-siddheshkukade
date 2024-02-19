@@ -4,6 +4,10 @@
 
 Welcome to the Language Model Marketplace, a project developed for Atlan's frontend task screening round. This marketplace is designed to provide a dynamic and visually appealing interface for users interested in language models. The project is built using ReactJS as the primary JavaScript framework, with Chakra UI ensuring a consistent and aesthetically pleasing user experience and integrated real-time with Hugging Face API, providing valuable functionalities related to language models. 
 
+## Demo Video
+https://youtu.be/CwF2F-9BKU0
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/CwF2F-9BKU0/0.jpg)](https://www.youtube.com/watch?v=CwF2F-9BKU0)
+
 ## Technology Stack
 
 - **Framework:** ReactJS
