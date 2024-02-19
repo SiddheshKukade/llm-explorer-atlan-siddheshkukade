@@ -78,7 +78,7 @@ const ModelPageView = () => {
                 toast(
                     {
                         title: `Problem with the API. Please try again later`,
-                        status: 'erorr',
+                        status: 'error',
                         duration: 3000,
                         isClosable: true,
                     }
@@ -166,7 +166,7 @@ const ModelPageView = () => {
                 <TabList bg={useColorModeValue("gray.100", 'gray.900')} w={"100vw"} display={"flex"} flexDirection={"row"} justifyContent={"center"}>
                     <Center>
                         {!isLoading ? (<Tab> <Heading size={"md"} display={"flex"} gap={1} color={"#52525b"}>Details</Heading></Tab>) : ""}
-                        {!isLoading ? (<Tab><Heading size={"md"} display={"flex"} gap={1} color={"#52525b"}>Interact with Model</Heading></Tab>) : ""}
+                        {!isLoading ? (<Tab><Heading size={"md"} display={"flex"} gap={1} color={"#52525b"}>Try it out</Heading></Tab>) : ""}
                     </Center>
 
                 </TabList>
