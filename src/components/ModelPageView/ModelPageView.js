@@ -204,7 +204,7 @@ const ModelPageView = () => {
                                                     Downloads last month
                                                 </Text>
                                             </Flex>
-                                            <ResponsiveContainer width="30%" height="100%">
+                                            <ResponsiveContainer width="50%" height="100%">
                                                 <AreaChart
                                                     width={500}
                                                     height={400}
