@@ -17,24 +17,35 @@ const CreateModel = () => {
     const [isModalNameValid, seIsModelNameValid] = useState(true);
     const [isOwnerNameValid, setIsOwnerNameValid] = useState(true);
     const handleOwnerNameValidOnBlur = () => {
-        let res =  ownerName != "";
+        let res = ownerName != "";
         setIsOwnerNameValid(res);
     }
     const hadleModelNameValidOnBlur = () => {
-        let res =  modelName != "";
+        let res = modelName != "";
         seIsModelNameValid(res);
     }
     const handleCreateModel = () => {
 
         handleOwnerNameValidOnBlur()
         hadleModelNameValidOnBlur()
-        toast({
-            title: `Success`,
-            description: "The model has been created successfully",
-            status: 'success',
-            duration: 3000,
-            isClosable: true,
-        })
+        if (modelName == "" || ownerName == "") {
+            toast({
+                title: `Error`,
+                description: "Please fill in the required fields.",
+                status: 'error',
+                duration: 3000,
+                isClosable: true,
+            })
+        } else {
+            toast({
+                title: `Success`,
+                description: "The model has been created successfully",
+                status: 'success',
+                duration: 3000,
+                isClosable: true,
+            })
+        }
+
     }
 
     return (<>
@@ -59,7 +70,7 @@ const CreateModel = () => {
                         <FormLabel>
                             Owner
                         </FormLabel>
-                        <Input onChange={(e) => {setOwnerName(e.target.value) }} isInvalid={!isOwnerNameValid} onBlur={handleOwnerNameValidOnBlur} w={"md"} background={"white"} type='tel' placeholder="Enter the name of owner" />
+                        <Input onChange={(e) => { setOwnerName(e.target.value) }} isInvalid={!isOwnerNameValid} onBlur={handleOwnerNameValidOnBlur} w={"md"} background={"white"} type='tel' placeholder="Enter the name of owner" />
                         <FormErrorMessage>
                             Please provide owner name
                         </FormErrorMessage>
@@ -69,7 +80,7 @@ const CreateModel = () => {
                         <FormLabel>
                             Model Name
                         </FormLabel>
-                        <Input isInvalid={!isModalNameValid} errorBorderColor='crimson' onBlur={hadleModelNameValidOnBlur} onChange={(e) => {setModelName(e.target.value) }} w={"md"} background={"white"} type='tel' placeholder="Enter the name of owner" />
+                        <Input isInvalid={!isModalNameValid} errorBorderColor='crimson' onBlur={hadleModelNameValidOnBlur} onChange={(e) => { setModelName(e.target.value) }} w={"md"} background={"white"} type='tel' placeholder="Enter the name of owner" />
                         <FormErrorMessage>
                             Please provide a model name
                         </FormErrorMessage>
