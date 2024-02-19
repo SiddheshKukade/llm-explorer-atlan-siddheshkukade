@@ -12,12 +12,12 @@ Welcome to the Language Model Marketplace, a project developed for Atlan's front
 
 - **Framework:** ReactJS
 - **UI Library:** Chakra UI
+- **API Integration:** Hugging Face API [ refer here](https://huggingface.co/spaces/enzostvs/hub-api-playground)
 - **Routing:** React Router DOM
 - **Icons:** React Icons
 - **Markdown Rendering:** React Markdown
 - **Date and Time Handling:** MomentJS
 - **Charting:** Recharts
-- **API Integration:** Hugging Face API
 
 ## Project Structure
 
