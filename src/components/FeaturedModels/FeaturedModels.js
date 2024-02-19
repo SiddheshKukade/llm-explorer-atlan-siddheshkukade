@@ -78,7 +78,8 @@ const FeaturedModels = ({ featuredData, isLoading }) => {
                     </Box> 
                 ) : ( <Flex pb={3} overflowX={"scroll"} scrollBehavior={"smooth"} direction={"row"} maxW={"80vw"} gap={3}>
                 {
-                    featuredData.slice(0,3).map((modal, idx) => (
+                    //filtering to skip un-readable model names
+                    featuredData.slice(2,10).map((modal, idx) => (
                         <FeaturedModalCard
                             gradientNo={idx}
                             key={idx}
