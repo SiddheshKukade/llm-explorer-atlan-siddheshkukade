@@ -24,6 +24,11 @@ The project follows a modular and organized structure to facilitate easy develop
 ## Performance
 
 ### Lighthouse report
+
+**What is Lighthouse report?**
+
+A Chrome Lighthouse report is a tool that evaluates a website's performance, accessibility, best practices, and SEO. It gives recommendations for improving the site's user experience and adherence to web standards.
+
 **Received scores:**
 -  ✅ Performance: 99/100 
 -  ✅ SEO: 91/100
