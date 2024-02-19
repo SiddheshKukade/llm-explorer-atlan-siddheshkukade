@@ -45,7 +45,7 @@ export default function Navbar() {
                     <Link to={"/create"}>
                     <Button variant="nav" leftIcon={<IoIosAdd />}  > Create a Model</Button> </Link>
                 <Button variant="nav" leftIcon={<GoDatabase />} onClick={handleNavClick}  > Datasets</Button>
-                <Button variant="nav" leftIcon={<IoChatboxOutline />}  > Posts</Button>
+                <Button variant="nav" leftIcon={<IoChatboxOutline />} onClick={handleNavClick}  > Posts</Button>
                 <HStack borderLeft={"2px"} pl={3} borderColor={"gray"}>
                     <Button  onClick={handleNavClick} variant="solid" background={"white"} color={"black"}
 
