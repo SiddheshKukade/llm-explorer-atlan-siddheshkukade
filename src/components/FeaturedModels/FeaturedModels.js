@@ -11,7 +11,6 @@ const FeaturedModels = ({ featuredData, isLoading }) => {
       background-position: 200%;
     }
   `;
-    console.log(featuredData)
     return (
         <Flex pl={5} direction={"column"} >
             <Heading fontWeight={400} py={3}>

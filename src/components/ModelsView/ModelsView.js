@@ -76,7 +76,7 @@ const ModelsView = () => {
             direction={"column"}
             overflowX={"hidden"}
         >
-            <FeaturedModels maxW={"100%"} isLoading={loading} featuredData={modalsListGlobal?.reverse().slice(11, 16).sort((a, b) => b.likes - a.likes)} />
+            <FeaturedModels maxW={"100%"} isLoading={loading} featuredData={modalsListGlobal?.reverse().slice(3, 7).sort((a, b) => b.likes - a.likes)} />
             <Flex maxH={"10vh"} justifyContent={"flex-start"} alignItems={"center"} w={"100%"} px={5} gap={20}>
                 <Flex gap={4} alignItems={"center"} my={4}>
                     <Heading fontWeight={400} >
