@@ -20,9 +20,9 @@ const ModelsView = () => {
         setLoading(true)
         try {
             let fetchModalData = await axios.get(`https://huggingface.co/api/models${payload}`)
-            console.log(fetchModalData?.data, "ds")
-            setModalsList(fetchModalData.data)
-            setModalsListGlobal(fetchModalData?.data);
+            //removing the first 20 unreadable model names
+            setModalsList(fetchModalData.data.slice(20, 90))
+            setModalsListGlobal(fetchModalData?.data.slice(30,90));
         } catch (e) {
             toast({
                 title: `Problem with the API. Please try again later`,
@@ -32,11 +32,10 @@ const ModelsView = () => {
             })
         }
         setLoading(false)
-        // fetch(
 
     }
+    //loading the data on the first render
     useEffect(() => {
-
         loadData("?limit=100&full=true&config=true");
     }, [])
     const handleSearchFilter = (searchTerm) => {
@@ -57,16 +56,6 @@ const ModelsView = () => {
     }
     const handleSortByDownloads = async () => {
         await loadData("?sort=downloads&direction=-1&limit=50&full=true&config=true")
-    }
-    const handleRecentlyCreated = async () => {
-        console.log(modalsListGlobal[0], "sorted", modalsListGlobal.sort((a, b) => new Date(b.lastModified) - new Date(a.lastModified)));
-        let list = modalsListGlobal.sort((a, b) => new Date(b.lastModified) - new Date(a.lastModified))
-        setModalsList(
-            list
-        )
-        setModalsListGlobal(
-            list
-        )
     }
     return (
         <Flex
