@@ -1,13 +1,5 @@
 import { Box, Divider, Flex, Heading, SimpleGrid, Tag, TagLabel, TagLeftIcon, TagRightIcon, Text } from '@chakra-ui/react'
 import React from 'react'
-import { CiImageOn } from "react-icons/ci"; import { IoIosGlobe } from "react-icons/io";
-import { SiTableau } from "react-icons/si";
-import { IoMdSettings } from 'react-icons/io'
-import { SiUnlicense } from "react-icons/si";
-import { GrDocumentImage } from "react-icons/gr"; import { LuTableProperties } from "react-icons/lu";
-import { LuTable2 } from "react-icons/lu"; import { RiDatabaseLine } from "react-icons/ri";
-import { LuLayers } from "react-icons/lu";
-import { AiTwotoneFileImage } from "react-icons/ai"; import { BsDatabaseCheck } from "react-icons/bs";
 const OthersUI = () => {
     return (
         <Flex h={"100%"} overflow={"scroll"} direction={"column"}>

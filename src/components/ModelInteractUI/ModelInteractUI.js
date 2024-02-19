@@ -2,7 +2,6 @@ import { Flex, IconButton, Input, InputGroup, InputLeftElement, InputRightAddon,
 import React, { useEffect, useRef, useState } from 'react'
 import { FaArrowUpLong } from "react-icons/fa6";
 import { CiChat1 } from 'react-icons/ci'
-import { IoIosSearch } from 'react-icons/io'
 import { chatbotResponses } from '../../constants/graphData';
 
 const ModelInteractUI = ({ model }) => {

@@ -1,8 +1,7 @@
 import React from 'react'
 import HomeView from '../HomeView/HomeView'
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
-import { Sidebar } from '../Sidebar/Sidebar';
 import ModelPageView from '../ModelPageView/ModelPageView';
 import CreateModel from '../CreateModel/CreateModel';
 

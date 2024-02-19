@@ -5,9 +5,7 @@ import { convertToK, shuffleArray } from '../../utlis/utils'
 import { BiDownload } from 'react-icons/bi'
 import { CiHeart } from "react-icons/ci";
 import RandomIconGenerator from '../RandomIconGenerator/RandomIconGenerator'
-import { IoAddCircleOutline } from 'react-icons/io5'
-import { Link, useNavigate } from 'react-router-dom'
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
+import { Link } from 'react-router-dom'
 
 import { graphData } from '../../constants/graphData'
 const ModalCard = ({ modal }) => {

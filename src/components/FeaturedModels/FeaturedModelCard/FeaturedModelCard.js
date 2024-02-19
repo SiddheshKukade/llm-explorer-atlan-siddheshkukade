@@ -2,13 +2,9 @@ import React, { useState } from 'react'
 import { Box, Flex, Tag, TagLabel, TagLeftIcon, Text, Tooltip, keyframes } from "@chakra-ui/react"
 import moment from 'moment'
 
-import { BiDownload } from 'react-icons/bi'
 import { CiHeart } from "react-icons/ci";
-import { IoAddCircleOutline } from 'react-icons/io5'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { convertToK } from '../../../utlis/utils';
-import RandomIconGenerator from '../../RandomIconGenerator/RandomIconGenerator';
-
 const FeaturedModalCard = ({ modal, gradientNo }) => {
     const shimmer = keyframes`
     0% {

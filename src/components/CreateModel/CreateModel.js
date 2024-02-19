@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import { Button, Center, Flex, Text, FormControl, FormLabel, Heading, IconButton, Input, InputGroup, InputLeftElement, InputRightAddon, Radio, RadioGroup, Stack, useToast, FormErrorMessage } from '@chakra-ui/react'
-import { BiBook, BiBox, BiSearch } from 'react-icons/bi'
-import { Link } from 'react-router-dom';
 import { FiCodesandbox } from "react-icons/fi";
 import Navbar from '../Navbar/Navbar'
 import { FaBookAtlas } from "react-icons/fa6";

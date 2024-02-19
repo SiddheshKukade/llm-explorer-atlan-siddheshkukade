@@ -105,7 +105,7 @@ const ModelPageView = () => {
                         <Flex height={"90vh"} mt={10} gap={3} direction={"column"} alignItems={"center"} justifyContent={"center"}>
                             <Spinner />
                             <Text>Waiting for Huggingface API</Text>
-                            <Text fontWeight={100} color={"gray"}>
+                            <Text fontWeight={300} color={"gray"}>
                                 Huggingface Public API might have rate limiting. If taking too much time to load. Please refresh.
                             </Text>
                             <Link textDecoration={"underline"} href='https://github.com/SiddheshKukade' isExternal>

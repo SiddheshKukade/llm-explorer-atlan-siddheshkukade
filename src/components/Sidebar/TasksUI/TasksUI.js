@@ -2,7 +2,6 @@ import { Box, Divider, Flex, Heading, SimpleGrid, Tag, TagLabel, TagLeftIcon, Ta
 import React from 'react'
 import { CiImageOn } from "react-icons/ci";
 import { SiTableau } from "react-icons/si";
-import { IoMdSettings } from 'react-icons/io'
 import { GrDocumentImage } from "react-icons/gr";import { LuTableProperties } from "react-icons/lu";
 import { LuTable2 } from "react-icons/lu";import { RiDatabaseLine } from "react-icons/ri";
 import { LuLayers } from "react-icons/lu";

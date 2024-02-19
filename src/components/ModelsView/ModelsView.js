@@ -1,12 +1,7 @@
 import { Button, Center, Flex, Heading, IconButton, Input, Text, InputGroup, InputLeftElement, Menu, MenuButton, MenuItem, MenuList, Spinner, useColorModeValue, useToast, Avatar, Tooltip } from '@chakra-ui/react'
-import { GiCardboardBoxClosed } from "react-icons/gi";
 import React, { useEffect, useRef, useState } from 'react'
-import { MdOutlinePublish } from "react-icons/md";
 import { IoCodeDownloadSharp } from "react-icons/io5";
-import { MdOutlineLocalFireDepartment } from "react-icons/md";
-import { IoIosSearch } from 'react-icons/io'; import { AiOutlineLike } from "react-icons/ai";
-import { IoChevronDownCircleOutline } from 'react-icons/io5'; import { IoFilter } from "react-icons/io5";
-import { MdBrowserUpdated } from "react-icons/md";
+ import { IoFilter } from "react-icons/io5";
 import axios from 'axios';
 import ModalCard from '../ModalCard/ModalCard';
 import { Link } from 'react-router-dom';
@@ -121,7 +116,7 @@ const ModelsView = () => {
                 <Flex height={"50vh"} mt={10} gap={3} direction={"column"} alignItems={"center"} justifyContent={"center"}>
                     <Spinner />
                     <Text>Waiting for Huggingface API</Text>
-                    <Text fontWeight={200} color={"gray"}>
+                    <Text fontWeight={400} color={"gray"}>
                         Huggingface Public API might have rate limiting. If taking too much time to load, Please refresh.
                     </Text>
                     <Link textDecoration={"underline"} href='https://github.com/SiddheshKukade' isExternal>

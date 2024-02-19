@@ -1,18 +1,12 @@
 import {
     Image, Flex, Button, HStack, Box, Text, Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbSeparator,
     useToast,
 } from '@chakra-ui/react';
 import { BiBox } from "react-icons/bi";
-import { CiBoxes } from "react-icons/ci";
 import { GoDatabase } from "react-icons/go";
 import { IoChatboxOutline } from "react-icons/io5";
-import { SlDocs } from "react-icons/sl";
 import React from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { IoIosAdd } from 'react-icons/io';
 const CTA = "Get Started"
 const data = [{ label: "Help" }, { label: "Account" }]
@@ -42,21 +36,7 @@ export default function Navbar() {
                 <Link to={"/"}>
                     <Image src={"https://website-assets.atlan.com/img/atlan-ai-text.webp"} h="35px" />
                 </Link>
-                {/* <Breadcrumb>
-                <BreadcrumbItem>
-                    </BreadcrumbItem>
-                    <BreadcrumbItem>
-                        <BreadcrumbLink href='#'>Chatbots</BreadcrumbLink>
-                    </BreadcrumbItem>
-
-                    <BreadcrumbItem >
-                        <BreadcrumbLink href='#' >
-                            <Text fontWeight={500} fontStyle={"bold"}>
-                                SIDDHESH_KUKADE_RESUME.pdf
-                            </Text>
-                        </BreadcrumbLink>
-                    </BreadcrumbItem>
-                </Breadcrumb> */}
+        
             </Box>
 
             <HStack as="nav" spacing="5" textColor={"#52525b"}>
