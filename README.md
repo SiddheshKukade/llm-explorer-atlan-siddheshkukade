@@ -37,6 +37,27 @@ A Chrome Lighthouse report is a tool that evaluates a website's performance, acc
 
 <img width="556" alt="Screenshot 2024-02-19 at 1 47 31 PM" src="https://github.com/SiddheshKukade/llm-explorer-atlan-siddheshkukade/assets/65951872/d7f44baa-e16f-49de-85d7-db30004b8143">
 
+
+# Performance Optimization 
+
+## Optimizations for Improved Performance
+
+In this project, several optimizations have been implemented to decrease load time and enhance performance:
+
+- **Async Calls**: Asynchronous calls have been integrated throughout the application to fetch data from servers or databases. This ensures that the user interface remains responsive and doesn't freeze while waiting for data retrieval processes to complete.
+
+- **UI Loaders**: UI loaders have been added to provide visual feedback to users during loading processes. These loaders indicate that the application is actively working on their request, reassuring users and enhancing their experience.
+
+- **Shimmers**: Shimmers have been strategically placed in various parts of the application to maintain user engagement during loading times. These animated placeholders create the illusion of content being loaded, keeping users visually engaged and informed about ongoing activity.
+
+By incorporating these optimizations, the application delivers a smoother and more responsive experience for users, significantly improving overall performance.
+
+Example of shimmer and loader on homescreen:
+<img width="1437" alt="Screenshot 2024-02-19 at 1 56 24 PM" src="https://github.com/SiddheshKukade/llm-explorer-atlan-siddheshkukade/assets/65951872/801b102f-be09-4bf6-871f-2aa0e184959f">
+
+
+
+
 ## Installation
 
 To run the project locally, follow these steps:
