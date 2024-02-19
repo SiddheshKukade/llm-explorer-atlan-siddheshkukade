@@ -24,10 +24,7 @@ const ModelInteractUI = ({ model }) => {
     }
     setChatList(prev => [...prev, msg]);
     setPrompt("");
-    setTimeout(() => {
       setChatList(prev => [...prev, chatbotResponses[Math.floor(Math.random() * chatbotResponses.length)]]);
-
-    }, 1200)
   }
   const handleKeyDown = (e) => {
     if (e.code === 'Enter') {
