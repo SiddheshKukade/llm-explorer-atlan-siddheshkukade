@@ -94,13 +94,11 @@ const ModelsView = () => {
                         <InputLeftElement pointerEvents='none'>
                             <BiSearch color='gray.300' />
                         </InputLeftElement>
-                        <Input onChange={(e) => handleSearchFilter(e.target.value)} ref={searchRef} w={"md"} background={"white"} type='tel' placeholder='Filter by name, downloads, likes ,etc ' />
+                        <Input onChange={(e) => handleSearchFilter(e.target.value)} ref={searchRef} w={"sm"} background={"white"} type='tel' placeholder='Filter by name, downloads, likes ,etc ' />
                     </InputGroup>
-                </Flex>
-                <Flex alignItems={"center"} justifyContent={"flex-start"}>
                     <Menu>
-                        <MenuButton as={Button} variant={"outline"} leftIcon={<IoFilter />} colorScheme={"#F9FAFB"}>
-                            Sort by
+                        <MenuButton w={"100%"} as={Button} size={"sm"} variant={"outline"} px={3} leftIcon={<IoFilter />}  colorScheme={"#F9FAFB"}>
+                            Sort
                         </MenuButton>
                         <MenuList>
 
@@ -112,6 +110,9 @@ const ModelsView = () => {
                             </MenuItem> */}
                         </MenuList>
                     </Menu>
+                </Flex>
+                <Flex alignItems={"center"} justifyContent={"flex-start"}>
+                 
                 </Flex>
 
             </Flex>

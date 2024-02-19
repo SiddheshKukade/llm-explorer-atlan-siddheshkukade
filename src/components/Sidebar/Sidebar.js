@@ -26,7 +26,8 @@ export const Sidebar = ({ ...rest }) => {
 
         >
             <Tabs pt={10} variant='soft-rounded' size={"sm"}  >
-                <TabList
+                <TabList 
+                overflowX={"scroll"}
                 >
                     <Tab
 
@@ -83,7 +84,7 @@ export const Sidebar = ({ ...rest }) => {
                         px={4}
                         borderRadius={10}
                         size={"sm"}
-                        leftIcon={<BiReset />} color={"darkslategray"} onClick={() => setFilterText("")} variant={"ghost"}> Reset Tasks</Button>
+                        leftIcon={<BiReset />} color={"darkslategray"} onClick={() => setFilterText("")} variant={"ghost"}> Reset</Button>
                 </Flex>
                 <TabPanels>
                     <TabPanel minH={"100vh"}>
