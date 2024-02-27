@@ -8,6 +8,8 @@ import RandomIconGenerator from '../RandomIconGenerator/RandomIconGenerator'
 import { Link } from 'react-router-dom'
 
 import { graphData } from '../../constants/graphData'
+
+// This component renders the single card for the llm model.
 const ModalCard = ({ modal }) => {
 
     return (

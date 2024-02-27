@@ -4,7 +4,7 @@ import { FaArrowUpLong } from "react-icons/fa6";
 import { CiChat1 } from 'react-icons/ci'
 import { chatbotResponses } from '../../constants/graphData';
 import { BiUpload } from 'react-icons/bi';
-
+// This loads the UI for the interactive chatbot.
 const ModelInteractUI = ({ model }) => {
   const toast = useToast();
   const [prompt, setPrompt] = useState("")

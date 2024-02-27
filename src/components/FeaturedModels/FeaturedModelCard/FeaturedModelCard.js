@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Box, Flex, Tag, TagLabel, TagLeftIcon, Text, Tooltip, keyframes } from "@chakra-ui/react"
 import moment from 'moment'
-
 import { CiHeart } from "react-icons/ci";
 import { Link } from 'react-router-dom'
 import { convertToK } from '../../../utlis/utils';
+
+// This components renders a individual card for featured model.
 const FeaturedModalCard = ({ modal, gradientNo }) => {
     const shimmer = keyframes`
     0% {

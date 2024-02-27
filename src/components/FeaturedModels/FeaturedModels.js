@@ -2,6 +2,7 @@ import { Box, Flex, Heading, Text, keyframes } from '@chakra-ui/react'
 import React from 'react'
 import FeaturedModalCard from './FeaturedModelCard/FeaturedModelCard'
 
+// This components loads a list of featured models.
 const FeaturedModels = ({ featuredData, isLoading }) => {
     const shimmer = keyframes`
     0% {

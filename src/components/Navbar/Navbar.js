@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import { IoIosAdd } from 'react-icons/io';
 const CTA = "Get Started"
 const data = [{ label: "Help" }, { label: "Account" }]
+//This loads the navbar UI alllowing users to visit different sections of the LLM explorer app.
 export default function Navbar() {
     const toast = useToast()
     const handleNavClick = ()=>{

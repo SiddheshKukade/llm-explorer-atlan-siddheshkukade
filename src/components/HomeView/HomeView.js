@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar'
 import { Box, Flex, useColorModeValue } from '@chakra-ui/react'
 import { Sidebar } from '../Sidebar/Sidebar'
 import ModelsView from '../ModelsView/ModelsView'
+//This component is the homepage of HomeView 
 const HomeView = () => {
   return (
     <Flex width={"100vw"} height={"100vh"} direction={"column"}>

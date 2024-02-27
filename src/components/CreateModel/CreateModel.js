@@ -6,6 +6,7 @@ import { FaBookAtlas } from "react-icons/fa6";
 import { GoRepoLocked } from "react-icons/go";
 import { IoAdd } from 'react-icons/io5';
 import { Select } from 'chakra-react-select';
+// This component shows the form to create the modal.
 const CreateModel = () => {
     const toast = useToast();
     const [modelName, setModelName] = useState("");
